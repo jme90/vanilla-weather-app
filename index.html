@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -15,10 +16,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Vancouver</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Wednesday 16:00</li>
-              <li>Cloudy</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -30,17 +31,16 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong>19</strong
+                  <strong id="temperature"></strong
                   ><span class="units">C° | <a href="#">°F</a></span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 1%</li>
-                <li>Humidity: 60%</li>
-                <li>Wind: 13 km/hour</li>
-                f
+              
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/hour</li>
               </ul>
             </div>
           </div>
