@@ -40,5 +40,5 @@ function dispayTemperature(response) {
 let apiKey = "f89e7e4c43bc69fb7d0255fbd3af7a68";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Vancouver&appid=${apiKey}&units=metric`;
 
-console.log(apiUrl);
+
 axios.get(apiUrl).then(dispayTemperature);
